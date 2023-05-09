@@ -11,5 +11,8 @@ d = {}
 for i in range(10):
     d[i] = i ** 2
 
+# Alternative way using dictionary comprehension
+d = {x: x*x for x in range(10)}    
+    
 for k in d:
     print(f"{d[k]} is the square of {k}")
